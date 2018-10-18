@@ -1,0 +1,197 @@
+---------------------------------------------------------------
+[ 2018-10-17T09:55:34+08:00 ] 127.0.0.1 GET /admin/dashboard?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.118324s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.077178s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.076958s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.077474s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.078208s ]
+---------------------------------------------------------------
+[ 2018-10-17T09:55:35+08:00 ] 127.0.0.1 GET /admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.115657s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.073628s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.074043s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.073789s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.075077s ]
+---------------------------------------------------------------
+[ 2018-10-17T09:55:36+08:00 ] 127.0.0.1 GET /admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132044s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.086546s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.085794s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.086863s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.087591s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `ucuj_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.085519s ]
+---------------------------------------------------------------
+[ 2018-10-17T09:57:56+08:00 ] 127.0.0.1 GET /admin/addon?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.129711s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.082627s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.085304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.086656s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.083901s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `ucuj_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.083757s ]
+---------------------------------------------------------------
+[ 2018-10-17T09:57:59+08:00 ] 127.0.0.1 GET /admin/category?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113563s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.073668s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.073377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.073604s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.075617s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_category` [ RunTime:0.074266s ]
+[ sql ] [ SQL ] SELECT * FROM `ucuj_category` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.074092s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `ucuj_auth_rule` WHERE  `name` = 'category' LIMIT 1 [ RunTime:0.073380s ]
+---------------------------------------------------------------
+[ 2018-10-17T09:58:00+08:00 ] 127.0.0.1 GET /admin/category/index?sort=weigh&order=desc&_=1539741479609
+[ sql ] [ DB ] CONNECT:[ UseTime:0.129349s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.083418s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.084026s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.084095s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.083063s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_category` [ RunTime:0.084787s ]
+[ sql ] [ SQL ] SELECT * FROM `ucuj_category` ORDER BY `weigh` DESC,`id` DESC [ RunTime:0.084619s ]
+---------------------------------------------------------------
+[ 2018-10-17T09:59:33+08:00 ] 127.0.0.1 GET /admin/dashboard?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.113412s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.073529s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.073519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.073561s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.074567s ]
+---------------------------------------------------------------
+[ 2018-10-17T09:59:34+08:00 ] 127.0.0.1 GET /admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.131707s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.085393s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.083734s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.097424s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.087286s ]
+---------------------------------------------------------------
+[ 2018-10-17T09:59:34+08:00 ] 127.0.0.1 GET /admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111720s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.072348s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.072746s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.072870s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.072917s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `ucuj_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.072540s ]
+---------------------------------------------------------------
+[ 2018-10-17T10:00:02+08:00 ] 127.0.0.1 GET /admin/addon?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.128731s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.084062s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.083592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.085177s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.084813s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `ucuj_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.084236s ]
+---------------------------------------------------------------
+[ 2018-10-17T10:01:24+08:00 ] 127.0.0.1 POST /admin/addon/install
+[ sql ] [ DB ] CONNECT:[ UseTime:0.128059s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.086204s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.085985s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.083948s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.081449s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms' , 'CMS管理' , 1 , 'fa fa-list' , 0 , 'normal' , 1539741679 , 1539741679) [ RunTime:0.087443s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives' , '内容管理' , 'fa fa-file-text-o' , 1 , 137 , 'normal' , 1539741679 , 1539741679) [ RunTime:0.087517s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives/index' , '查看' , 0 , 'fa fa-circle-o' , 138 , 'normal' , 1539741679 , 1539741679) [ RunTime:0.087281s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives/content' , '副表' , 0 , 'fa fa-circle-o' , 138 , 'normal' , 1539741679 , 1539741679) [ RunTime:0.045064s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives/add' , '添加' , 0 , 'fa fa-circle-o' , 138 , 'normal' , 1539741679 , 1539741679) [ RunTime:0.045348s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives/edit' , '修改' , 0 , 'fa fa-circle-o' , 138 , 'normal' , 1539741679 , 1539741679) [ RunTime:0.045383s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives/del' , '删除' , 0 , 'fa fa-circle-o' , 138 , 'normal' , 1539741679 , 1539741679) [ RunTime:0.045770s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/archives/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 138 , 'normal' , 1539741679 , 1539741679) [ RunTime:0.045707s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/channel' , '栏目管理' , 'fa fa-list' , 1 , 137 , 'normal' , 1539741679 , 1539741679) [ RunTime:0.087675s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/channel/index' , '查看' , 0 , 'fa fa-circle-o' , 145 , 'normal' , 1539741679 , 1539741679) [ RunTime:0.087319s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/channel/add' , '添加' , 0 , 'fa fa-circle-o' , 145 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.045412s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/channel/edit' , '修改' , 0 , 'fa fa-circle-o' , 145 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.045295s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/channel/del' , '删除' , 0 , 'fa fa-circle-o' , 145 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.046395s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/channel/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 145 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.045288s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/modelx' , '模型管理' , 'fa fa-th' , 1 , 137 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.087580s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/modelx/index' , '查看' , 0 , 'fa fa-circle-o' , 151 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.087362s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/modelx/add' , '添加' , 0 , 'fa fa-circle-o' , 151 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.045835s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/modelx/edit' , '修改' , 0 , 'fa fa-circle-o' , 151 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.045604s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/modelx/del' , '删除' , 0 , 'fa fa-circle-o' , 151 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.045652s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/modelx/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 151 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.045366s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/fields' , '字段管理' , 'fa fa-fields' , 0 , 151 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.087718s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/fields/index' , '查看' , 0 , 'fa fa-circle-o' , 157 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.087777s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/fields/add' , '添加' , 0 , 'fa fa-circle-o' , 157 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.045779s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/fields/edit' , '修改' , 0 , 'fa fa-circle-o' , 157 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.046350s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/fields/del' , '删除' , 0 , 'fa fa-circle-o' , 157 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.045237s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/fields/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 157 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.045487s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/tags' , '标签管理' , 'fa fa-tags' , 1 , 137 , 'normal' , 1539741680 , 1539741680) [ RunTime:0.087312s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/tags/index' , '查看' , 0 , 'fa fa-circle-o' , 163 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.085828s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/tags/add' , '添加' , 0 , 'fa fa-circle-o' , 163 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.044918s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/tags/edit' , '修改' , 0 , 'fa fa-circle-o' , 163 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.044742s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/tags/del' , '删除' , 0 , 'fa fa-circle-o' , 163 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.045726s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/tags/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 163 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.061184s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/block' , '区块管理' , 'fa fa-th-large' , 1 , 137 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.087954s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/block/index' , '查看' , 0 , 'fa fa-circle-o' , 169 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.087366s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/block/add' , '添加' , 0 , 'fa fa-circle-o' , 169 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.045225s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/block/edit' , '修改' , 0 , 'fa fa-circle-o' , 169 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.044813s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/block/del' , '删除' , 0 , 'fa fa-circle-o' , 169 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.047006s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/block/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 169 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.045730s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/page' , '单页管理' , 'fa fa-file' , 1 , 137 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.087500s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/page/index' , '查看' , 0 , 'fa fa-circle-o' , 175 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.087738s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/page/add' , '添加' , 0 , 'fa fa-circle-o' , 175 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.045520s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/page/edit' , '修改' , 0 , 'fa fa-circle-o' , 175 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.046712s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/page/del' , '删除' , 0 , 'fa fa-circle-o' , 175 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.044013s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/page/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 175 , 'normal' , 1539741681 , 1539741681) [ RunTime:0.045747s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `icon` , `ismenu` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/comment' , '评论管理' , 'fa fa-comment' , 1 , 137 , 'normal' , 1539741682 , 1539741682) [ RunTime:0.087657s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/comment/index' , '查看' , 0 , 'fa fa-circle-o' , 181 , 'normal' , 1539741682 , 1539741682) [ RunTime:0.087714s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/comment/add' , '添加' , 0 , 'fa fa-circle-o' , 181 , 'normal' , 1539741682 , 1539741682) [ RunTime:0.045372s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/comment/edit' , '修改' , 0 , 'fa fa-circle-o' , 181 , 'normal' , 1539741682 , 1539741682) [ RunTime:0.045349s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/comment/del' , '删除' , 0 , 'fa fa-circle-o' , 181 , 'normal' , 1539741682 , 1539741682) [ RunTime:0.045118s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_auth_rule` (`name` , `title` , `ismenu` , `icon` , `pid` , `status` , `createtime` , `updatetime`) VALUES ('cms/comment/multi' , '批量更新' , 0 , 'fa fa-circle-o' , 181 , 'normal' , 1539741682 , 1539741682) [ RunTime:0.045123s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_admin_log` [ RunTime:0.084144s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('插件管理 安装' , '{\"name\":\"cms\",\"force\":\"0\",\"uid\":\"2437\",\"token\":\"eb1ec063-30a1-456e-81d7-c700b662cbae\",\"version\":\"1.0.15\",\"faversion\":\"1.0.0.20180911_beta\"}' , '/admin/addon/install' , 1 , 'bcy' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1539741683) [ RunTime:0.083296s ]
+---------------------------------------------------------------
+[ 2018-10-17T10:01:24+08:00 ] 127.0.0.1 POST /admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.120537s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.081064s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.080033s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.078870s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.080985s ]
+[ sql ] [ SQL ] SELECT * FROM `ucuj_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 1 ORDER BY `weigh` DESC [ RunTime:0.080730s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_admin_log` [ RunTime:0.078667s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"refreshmenu\"}' , '/admin/index/index' , 1 , 'bcy' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1539741684) [ RunTime:0.091807s ]
+---------------------------------------------------------------
+[ 2018-10-17T10:01:30+08:00 ] 127.0.0.1 GET /admin/addon?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.130415s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.085807s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.085214s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.085528s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.085369s ]
+---------------------------------------------------------------
+[ 2018-10-17T10:01:31+08:00 ] 127.0.0.1 GET /admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112169s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.072324s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.072727s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.073671s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.073734s ]
+[ sql ] [ SQL ] SELECT * FROM `ucuj_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 1 ORDER BY `weigh` DESC [ RunTime:0.072980s ]
+---------------------------------------------------------------
+[ 2018-10-17T10:01:31+08:00 ] 127.0.0.1 GET /admin/dashboard?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.125052s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.082201s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.081550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.082633s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.082388s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `ucuj_auth_rule` WHERE  `name` = 'dashboard' LIMIT 1 [ RunTime:0.081442s ]
+---------------------------------------------------------------
+[ 2018-10-17T10:01:32+08:00 ] 127.0.0.1 GET /admin/addon?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.123941s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.080468s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.080830s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.080191s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.081738s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `ucuj_auth_rule` WHERE  `name` = 'addon' LIMIT 1 [ RunTime:0.092113s ]
+---------------------------------------------------------------
+[ 2018-10-17T10:01:37+08:00 ] 127.0.0.1 POST /admin/addon/install
+[ sql ] [ DB ] CONNECT:[ UseTime:0.111364s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.071676s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.073314s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.072443s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.073600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_admin_log` [ RunTime:0.072672s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('插件管理 安装' , '{\"name\":\"upyun\",\"force\":\"0\",\"uid\":\"2437\",\"token\":\"eb1ec063-30a1-456e-81d7-c700b662cbae\",\"version\":\"1.0.1\",\"faversion\":\"1.0.0.20180911_beta\"}' , '/admin/addon/install' , 1 , 'bcy' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1539741697) [ RunTime:0.076846s ]
+---------------------------------------------------------------
+[ 2018-10-17T10:01:38+08:00 ] 127.0.0.1 POST /admin/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.112701s ] mysql:host=120.78.135.109;dbname=ucuj;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_group_access` [ RunTime:0.071141s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ucuj_auth_group_access` `aga` LEFT JOIN `ucuj_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.071126s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_auth_rule` [ RunTime:0.071738s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ucuj_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.070899s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ucuj_admin_log` [ RunTime:0.076642s ]
+[ sql ] [ SQL ] INSERT INTO `ucuj_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('' , '{\"action\":\"refreshmenu\"}' , '/admin/index/index' , 1 , 'bcy' , 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36' , '127.0.0.1' , 1539741698) [ RunTime:0.074718s ]
